@@ -1,4 +1,4 @@
-png(file="plot3.png", width = 480, height = 480)
+png(file="plot4.png", width = 480, height = 480)
 power <- read.table("household_power_consumption.txt", sep=";", header=TRUE, stringsAsFactors=FALSE, na.strings = "?")
 
 power$Date<-as.Date(power$Date, format="%d/%m/%Y")

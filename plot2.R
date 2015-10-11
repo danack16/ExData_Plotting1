@@ -8,5 +8,5 @@ red_pow<- rbind(red_pow1, red_pow2)
 
 plot(red_pow$Global_active_power, typ="l", xaxt="n", ylab="Global Active Power (kilowatts)", xlab="")
 axis(1,  at = c(0, 1440, 2880), labels = c("Thur", "Fri", "Sat"), las = 0)
-##dev.copy(png, file= "plot1.png")
+
 dev.off()

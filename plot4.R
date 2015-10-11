@@ -5,7 +5,7 @@ power$Date<-as.Date(power$Date, format="%d/%m/%Y")
 red_pow1<- subset(power, Date == "2007-02-01")
 red_pow2<- subset(power, Date == "2007-02-02")
 red_pow<- rbind(red_pow1, red_pow2)
-par(mfrow=c(2,2))
+par(mfrow=c(2,2))  ##2by2
 plot(red_pow$Global_active_power, typ="l", xaxt="n", ylab="Global Active Power (kilowatts)", xlab="")
 axis(1,  at = c(0, 1440, 2880), labels = c("Thur", "Fri", "Sat"), las = 0)
 plot(red_pow$Voltage, typ="l", xaxt="n", ylab="Voltage", xlab="datetime")
